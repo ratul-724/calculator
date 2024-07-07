@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator" >
+        <h3 style="text-align: center; padding: 12px;">CALCULATOR</h3>
+        <div class="Full-display">
+            <input type="text" name="display" id="Result" placeholder="0" class="display" disabled>
+        </div>
+        <div class="first-row btnAll">
+            <button class="btn operator" style="font-size: 20px;" onclick="clearResult()">AC</button>
+            <button class="btn operator" style="font-size: 20px;" onclick="deletResult()">Del</button>
+            <button class="btn operator" style="font-size: 20px;" onclick="insertValue('%')">%</button>
+            <button class="btn operator" onclick="insertValue('/')">/</button>
+        </div>
+        <div class="second-row btnAll">
+            <button class="btn" onclick="insertValue('9')">9</button>
+            <button class="btn" onclick="insertValue('8')">8</button>
+            <button class="btn" onclick="insertValue('7')">7</button>
+            <button class="btn operator" onclick="insertValue('*')">*</button>
+        </div>
+        <div class="third-row btnAll">
+            <button class="btn" onclick="insertValue('6')">6</button>
+            <button class="btn" onclick="insertValue('5')">5</button>
+            <button class="btn" onclick="insertValue('4')">4</button>
+            <button class="btn operator" onclick="insertValue('+')">+</button>
+        </div>
+        <div class="fourth-row btnAll">
+            <button class="btn" onclick="insertValue('3')">3</button>
+            <button class="btn" onclick="insertValue('2')">2</button>
+            <button class="btn" onclick="insertValue('1')">1</button>
+            <button class="btn operator" onclick="insertValue('-')">-</button>
+        </div>
+        <div class="btnAll">
+            <button class="btn" onclick="insertValue('0')">0</button>
+            <button class="btn" style="font-size: 23px;" onclick="insertValue('00')">00</button>
+            <button class="btn operator" onclick="insertValue('.')">.</button>
+            <button class="btn equal operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
